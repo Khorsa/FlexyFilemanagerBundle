@@ -1,0 +1,20 @@
+parameters:
+# Здесь могут быть параметры бандла
+
+services:
+
+  # Конфигурация для всех сервисов  этого файла по умолчанию
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  # Регистрируем контроллеры бандла, сервисы и репозитории как DI-сервисы
+  flexycms\FlexyFilemanagerBundle\Service\FileManagerService:
+    arguments:
+      $uploadPath: '%uploads_path%'
+
+  flexycms\FlexyFilemanagerBundle\Service\ImageManagerService:
+    arguments:
+      $uploadPath: '%uploads_path%'
+
+  flexycms\FlexyFilemanagerBundle\Controller\FilemanagerController: ~
