@@ -1,12 +1,12 @@
 {
   "name": "flexycms/flexyfilemanager-bundle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "symfony-bundle",
   "description": "Файловый менеджер, управление загруженными и прикремплёнными к объектам файлами",
   "license": "proprietary",
   "require": {
     "php": "^7.3",
-    "flexycms/flexyadminframe-bundle": "^0.1.0",
+    "flexycms/flexyadminframe-bundle": "^0.1.2",
     "flexycms/flexyadminhome-bundle": "^0.1.0"
   },
   "require-dev": {
