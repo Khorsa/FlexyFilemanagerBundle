@@ -15,10 +15,16 @@ class FlexyFilemanagerExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+
+		$container->setParameter(
+			'flexycms.uploads_path', '/public/uploads/embedded',
+		);
+		
         $loader = new YamlFileLoader(
             $container,
             new FileLocator(__DIR__.'/../../config')
         );
         $loader->load('services.yaml');
+		
     }
 }
