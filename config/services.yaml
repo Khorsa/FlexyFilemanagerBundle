@@ -12,10 +12,10 @@ services:
   # Регистрируем контроллеры бандла, сервисы и репозитории как DI-сервисы
   flexycms\FlexyFilemanagerBundle\Service\FileManagerService:
     arguments:
-      $uploadPath: '%uploads_path%'
+      $uploadPath: '%flexycms.uploads_path%'
 
   flexycms\FlexyFilemanagerBundle\Service\ImageManagerService:
     arguments:
-      $uploadPath: '%uploads_path%'
+      $uploadPath: '%flexycms.uploads_path%'
 
   flexycms\FlexyFilemanagerBundle\Controller\FilemanagerController: ~
